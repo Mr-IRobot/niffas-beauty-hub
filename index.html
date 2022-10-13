@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Niffas Beauty Hub</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&amp;display=swap">
+    <!-- Modal Video-->
+    <link rel="stylesheet" href="vendor/modal-video/css/modal-video.min.css">
+    <!-- Leaflet-->
+    <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+    <!-- Swiper slider-->
+    <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    
+    <style>
+      .hero {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+        width: 100%;
+        min-height: 80vh;
+        padding-block: var(--section-padding);
+        display: flex;
+        align-items: center;
+      }
+    </style>
+
+    
+    
+      
+  </head>
+  <body>
+    <!-- navbar-->
+    <header class="header">
+      <div class="top-bar bg-dark text-white" style="text-align:center;">
+        <div class="container" style="text-align:center;">
+          <div class="row gx-0" style="text-align:center;">
+            <!-- <div class="col-lg-4 bg-primary py-2 text-center text-lg-start d-none d-lg-flex align-items-center" >
+              <p class="mb-0 text-sm" ><i class="fas fa-clock me-2"></i>Opening hours: Mon - Sat 9:00 - 18:00</p>
+            </div> -->
+            <div class="col-lg-10 text-end py-2 text-center text-lg-end">
+              <ul class="list-inline mb-0">
+                <li class="list-inline-item"><a class="fw-normal text-sm reset-anchor" href="tel:09099387775"><i class="fas fa-mobile me-2"></i>+234 909 938 7775</a></li>
+                <li class="list-inline-item">|</li>
+                <li class="list-inline-item"><a class="fw-normal text-sm reset-anchor" href="mailto:abuchijennifer5@gmail.com"><i class="fas fa-envelope me-2"></i>Abuchijennifer5@gmail.com</a></li>
+                <li class="list-inline-item">|</li>
+                <li class="list-inline-item"><a class="fw-normal text-sm reset-anchor" href="#!"><i class="fas fa-clock me-2"></i>Opening hours: Mon - Sat 9:00 - 18:00</a></li>
+                <!-- <li class="list-inline-item">|</li> -->
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light py-3 bg-white shadow-sm">
+        <div class="container"><a class="navbar-brand" href="index.html"><!--<h1>DUWAT</h1><h6>AUTOMOBILE SERVICE</h6>--> <img src="img/niffa 3.png" alt="" width="200"></a>
+          <button class="navbar-toggler navbar-toggler-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+              <li class="nav-item mx-2">
+                <!-- Link--><a class="nav-link text-uppercase active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item mx-2">
+                <!-- Link--><a class="nav-link text-uppercase" href="about.html">About</a>
+              </li>
+              <li class="nav-item mx-2">
+                <!-- Link--><a class="nav-link text-uppercase" href="services.html">Services</a>
+              </li>
+              <li class="nav-item mx-2">
+                <!-- Link--><a class="nav-link text-uppercase" href="samples.html">Sample Works</a>
+              </li>
+              <li class="nav-item mx-2">
+                <!-- Link--><a class="nav-link text-uppercase" href="shopio/shop.html">Products</a>
+              </li>
+              <li class="nav-item mx-2">
+                <!-- Link--><a class="nav-link text-uppercase" href="contact.html">Contact</a>
+              </li>
+              <!-- <li class="nav-item ms-2 dropdown"><a class="nav-link text-uppercase dropdown-toggle pe-0" id="navbarDropdownMenuLink" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                <div class="dropdown-menu mt-lg-4 text-sm" aria-labelledby="navbarDropdownMenuLink"><a class="dropdown-item" href="index.html">Home</a><a class="dropdown-item" href="about.html">About</a><a class="dropdown-item" href="contact.html">Contact                </a></div>
+              </li> -->
+              <li class="nav-item ms-lg-3 ps-lg-3"><a class="btn btn-outline-primary btn-sm" href="booking.html">Book a Makeup</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Hero Slider -->
+    <section class="hero">
+      <div class="swiper hero-slider">
+        <div class="swiper-wrapper">
+          <!-- Hero Slide-->
+          <div class="swiper-slide hero-slide bg-size bg-center py-5" style="background: url(img/h12.jpg)">
+            <div class="container text-white py-5 index-forward">
+              <div class="row">
+                <div class="col-lg-7">
+                  <h1>We are here to enhance your beauty</h1>
+                  <p class="lead">We are highly dedicated and skilled makeup brand with an exceptional record of customer service and client satisfaction. Adept at perceiving individual clients’ unique skin tone and corresponding makeup needs and recommending products accordingly.</p>
+                  <ul class="list-inline">
+                    <li class="list-inline-item me-0"><a class="btn btn-primary" href="about.html">Read More</a></li>
+                    <li class="list-inline-item"></li><a class="btn btn-outline-light" href="booking.html">Book a Makeup</a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Hero Slide-->
+          <div class="swiper-slide hero-slide bg-size bg-center py-5" style="background: url(img/h6.jpg)">
+            <div class="container text-white py-5 index-forward">
+              <div class="row">
+                <div class="col-lg-7">
+                  <!-- <h1>Choose the right artist for your makeup</h1> -->
+                  <h1>We are here to enhance your beauty</h1>
+                  <p class="lead">We are highly dedicated and skilled makeup brand with an exceptional record of customer service and client satisfaction. Adept at perceiving individual clients’ unique skin tone and corresponding makeup needs and recommending products accordingly.</p>
+                  <ul class="list-inline">
+                    <li class="list-inline-item me-0"><a class="btn btn-primary" href="#!">Read More</a></li>
+                    <li class="list-inline-item"></li><a class="btn btn-outline-light" href="#!">Book a Makeup</a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Hero Slide-->
+          <div class="swiper-slide hero-slide bg-size bg-center py-5" style="background: url(img/h9.jpg)">
+            <div class="container text-white py-5 index-forward">
+              <div class="row">
+                <div class="col-lg-7">
+                  <!-- <h1>Your glow is our success</h1> -->
+                  <h1>We are here to enhance your beauty</h1>
+                  <p class="lead">We are highly dedicated and skilled makeup brand with an exceptional record of customer service and client satisfaction. Adept at perceiving individual clients’ unique skin tone and corresponding makeup needs and recommending products accordingly.</p>
+                  <ul class="list-inline">
+                    <li class="list-inline-item me-0"><a class="btn btn-primary" href="#!">Read More</a></li>
+                    <li class="list-inline-item"></li><a class="btn btn-outline-light" href="#!">Book a Makeup</a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-nav-custom d-none d-lg-block"></div>
+        <div class="swiper-button-prev swiper-nav-custom d-none d-lg-block"></div>
+        <div class="swiper-pagination py-3 d-block d-lg-none"></div>
+      </div>
+    </section>
+    <!-- Features Section -->
+    <section class="py-5 bg-light">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-6 order-2 order-lg-1">
+            <p class="h6 mb-1 text-uppercase text-primary mb-3">Our main service</p>
+            <h2 class="mb-4">We Have Proffessional Makeup Artists Onsite To Attend To Your Needs ASAP</h2>
+            <p class="text-sm text-muted">Here at NIFFAS BEAUTY HUB, we do all kinds of makeup which can you can book directly from our website at the click of a button and we sell makeup tools and accessories.</p>
+            <!-- <ul class="list-check list-unstyled row px-3 mb-4 gy-2">
+              <li class="text-sm text-muted col-lg-6">Acquire live chat enables sales</li>
+              <li class="text-sm text-muted col-lg-6">Learn from customer feedback</li>
+              <li class="text-sm text-muted col-lg-6">Engage - marketing automation</li>
+              <li class="text-sm text-muted col-lg-6">Support -customer support</li>
+              <li class="text-sm text-muted col-lg-6">Acquire live chat enables sales</li>
+              <li class="text-sm text-muted col-lg-6">Learn from customer feedback</li>
+            </ul> -->
+            <ul class="list-inline py-4 border-top border-bottom d-flex align-items-center">
+              <li class="list-inline-item pr-4 mr-0"><img src="img/about-sign.png" alt="" width="80"></li>
+              <li class="list-inline-item px-4 mr-0 border-left">
+                <h5 class="mb-0">Nneamaka Jenifer</h5>
+                <p class="small font-weight-normal text-muted mb-0">CEO</p>
+              </li>
+              <li class="list-inline-item pl-4 border-left">
+                <h5 class="mb-0"><a href="tel:09099387775">+234 909 938 7775</a></h5>
+                <p class="small font-weight-normal text-muted mb-0">Call to ask any question or visit our contact page</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-5 ms-auto mb-4 mb-lg-0 order-1 order-lg-2">
+            <div class="p-2 border"><img class="img-fluid" src="img/h12.jpg" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section -->
+    <section class="py-5">
+      <div class="container py-5 text-center">
+        <header class="mb-5">
+          <div class="row">
+            <div class="col-lg-7 mx-auto">
+              <p class="h6 text-uppercase text-primary mb-0">Our services</p>
+              <h2>Choose The Right Makeup For You From Our Services</h2>
+            </div>
+          </div>
+        </header>
+        <div class="row align-items-stretch gy-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="px-4 py-5 border border-2 border-dash h-10">
+              <!-- <svg class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
+                <use xlink:href="#laptop-screen-1"> </use>
+              </svg> -->
+              <h3 class="h5">BRIDAL MAKEUP</h3>
+              <!-- <p class="text-sm mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> -->
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="px-4 py-5 border border-2 border-dash h-10">
+              <!-- <svg class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
+                <use xlink:href="#quality-1"> </use>
+              </svg> -->
+              <h3 class="h5">BRIDAL HAIR</h3>
+              <!-- <p class="text-sm mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> -->
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="px-4 py-5 border border-2 border-dash h-10">
+              <!-- <svg class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
+                <use xlink:href="#survey-1"> </use>
+              </svg> -->
+              <h3 class="h5">FIXING OF LASHES</h3>
+              <!-- <p class="text-sm mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> -->
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="px-4 py-5 border border-2 border-dash h-10">
+              <!-- <svg class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
+                <use xlink:href="#pie-chart-1"> </use>
+              </svg> -->
+              <h3 class="h5">GELE TYPING</h3>
+              <!-- <p class="text-sm mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> -->
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="px-4 py-5 border border-2 border-dash h-10">
+              <!-- <svg class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
+                <use xlink:href="#pay-1"> </use>
+              </svg> -->
+              <h3 class="h5">PEDICURE MANICURE</h3>
+              <!-- <p class="text-sm mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> -->
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="px-4 py-5 border border-2 border-dash h-10">
+              <!-- <svg class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
+                <use xlink:href="#stack-1"> </use>
+              </svg> -->
+              <h3 class="h5">NAIL FIXING</h3>
+              <!-- <p class="text-sm mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="px-4 py-5 border border-2 border-dash h-10">
+              <!-- <svg class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
+                <use xlink:href="#stack-1"> </use>
+              </svg> -->
+              <h3 class="h5">WALK IN MAKEOVER</h3>
+              <!-- <p class="text-sm mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> -->
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="px-4 py-5 border border-2 border-dash h-10">
+              <!-- <svg class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
+                <use xlink:href="#stack-1"> </use>
+              </svg> -->
+              <h3 class="h5">MAKEUP TRAINING</h3>
+              <!-- <p class="text-sm mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> -->
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="px-4 py-5 border border-2 border-dash h-10">
+              <!-- <svg class="svg-icon mb-4 text-primary svg-icon-light svg-icon-big">
+                <use xlink:href="#stack-1"> </use>
+              </svg> -->
+              <h3 class="h5">SALES OF BEAUTY PRODUCTS</h3>
+              <!-- <p class="text-sm mb-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Divider Section -->
+    <section class="bg-cover bg-center" style="background: url(img/hero-banner-2.jpg)">
+      <div class="primary-overlay py-5">
+        <div class="overlay-content">
+          <div class="container">
+            <div class="row align-items-center gy-4">
+              <div class="col-lg-7 text-center text-lg-start">
+                <h2 class="text-white mb-2">We are always at your service 24/7</h2>
+                <p class="text-white mb-0">We can bring our services to your doorstep, you don't have to be present at the office to book a service. You can book any service of your choice on the website.</p>
+              </div>
+              <div class="col-lg-3 ms-auto text-center text-lg-end"><a class="btn btn-outline-light" href="booking.html">Book a Service Now</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features Section -->
+    <section class="py-5 bg-light">
+      <div class="container py-5">
+        <div class="row align-items-center gx-lg-0">
+          <div class="col-lg-5">
+            <div class="bg-primary pe-lg-3"><img class="img-fluid w-100" src="img/h5.jpg" alt=""></div>
+          </div>
+          <div class="col-lg-7">
+            <div class="p-4 p-md-5 shadow bg-white">
+              <p class="h6 mb-1 text-uppercase text-primary mb-3">Why choose us</p>
+              <h2 class="mb-5">We Render Proffessional Makeup That Makes Your Beauty Pop</h2>
+              <div class="row">
+                <div class="col-lg-9">
+                  <ol class="list-numbers mb-0">
+                    <li class="mb-4">
+                      <h5>Excellent and Proffessional</h5>
+                      <!-- <p class="text-sm text-muted">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat. </p> -->
+                    </li>
+                    <li class="mb-4">
+                      <h5>Affordable</h5>
+                      <!-- <p class="text-sm text-muted">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat. </p> -->
+                    </li>
+                    <li class="mb-4">
+                      <h5>Best Customer Service</h5>
+                      <!-- <p class="text-sm text-muted">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat. </p> -->
+                    </li>
+                    <li>
+                      <h5>Available 24/7</h5>
+                      <!-- <p class="text-sm text-muted">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat. </p> -->
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Video Section -->
+    <section class="bg-center bg-cover" style="background: url(img/h1.jpg)">
+     
+    
+
+
+	<!-- <center>
+		
+		<div class="bs-example">
+			<a href="#Geeks2"
+			class="btn btn-lg btn-primary"
+			data-toggle="modal">Launch Modal</a>
+
+			<div id="Geeks2" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button"
+									class="close"
+									data-dismiss="modal"
+									aria-hidden="true">×</button>
+						</div>
+						<div class="modal-body">
+							<iframe id="Geeks3" width="450" height="350"
+									src=
+"img/intro.mp4"
+									frameborder="0" allowfullscreen>
+							</iframe>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+	</center> -->
+
+
+		
+
+      <div class="dark-overlay py-5">
+        <div class="overlay-content text-white">
+          <div class="container py-5">
+            <header class="text-center">
+              <div class="row">
+                <div class="col-lg-9 mx-auto">
+                  <video src="img/intro.mp4" controls></video>
+                  <!-- <button class="video-btn mb-5" type="button" data-video-id="NOG3eus4ZSo"><i class="fas fa-play"></i></button> -->
+                  <!-- <p class="h6 mb-1 text-uppercase text-primary mb-3">Watch Video</p> -->
+                  <p class="h6 mb-1 text-uppercase text-primary mb-3">We make a difference</p>
+                  <h2 class="h1 mb-5">The Best Solutions For Beauty</h2><a class="btn btn-primary" href="services.html">View more services</a>
+                </div>
+              </div>
+            </header>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials Section-->
+    <section class="py-5">
+      <div class="container py-5">
+        <p class="h6 mb-1 text-uppercase text-primary mb-3">Our clients say</p>
+        <div class="row mb-5">
+          <div class="col-lg-5">
+            <h2 class="mb-5">We are the best at our services</h2>
+          </div>
+          <!-- <div class="col-lg-7">
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div> -->
+        </div>
+        <div class="swiper testimonials-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide p-3">
+              <div class="testimonial p-5 shadow-sm mb-5">
+                <div class="d-flex align-items-center mb-4">
+                  <div class="testimonial-img flex-shrink-0"><img class="img-fluid rounded-circle" src="img/h47.jpg" alt="" ></div>
+                  <div class="ms-4">
+                    <h5 class="mb-0">Mary Chinecherem</h5>
+                    <p class="small text-muted mb-1">Businesswoman</p>
+                    <ul class="small list-inline text-primary mb-0">
+                      <li class="list-inline-item m-0"><i class="fas fa-star"></i></li>
+                      <li class="list-inline-item m-0 1"><i class="fas fa-star"></i></li>
+                      <li class="list-inline-item m-0 2"><i class="fas fa-star"></i></li>
+                      <li class="list-inline-item m-0 3"><i class="fas fa-star"></i></li>
+                      <li class="list-inline-item m-0 4"><i class="fas fa-star"></i></li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="text-muted text-sm mb-0">I love your work so much, it's exceptional</p>
+              </div>
+            </div>
+            <div class="swiper-slide p-3">
+              <div class="testimonial p-5 shadow-sm mb-5">
+                <div class="d-flex align-items-center mb-4">
+                  <div class="testimonial-img flex-shrink-0"><img class="img-fluid rounded-circle" src="img/h53.jpg" alt=""></div>
+                  <div class="ms-4">
+                    <h5 class="mb-0">Mirian Ada</h5>
+                    <p class="small text-muted mb-1">Fashion Designer</p>
+                    <ul class="small list-inline text-primary mb-0">
+                      <li class="list-inline-item m-0"><i class="fas fa-star"></i></li>
+                      <li class="list-inline-item m-0 1"><i class="fas fa-star"></i></li>
+                      <li class="list-inline-item m-0 2"><i class="fas fa-star"></i></li>
+                      <li class="list-inline-item m-0 3"><i class="fas fa-star"></i></li>
+                      <li class="list-inline-item m-0 4"><i class="fas fa-star"></i></li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="text-muted text-sm mb-0">Thanks so much niffas, your work is perfect   </p>
+              </div>
+            </div>
+            <div class="swiper-slide p-3">
+              <div class="testimonial p-5 shadow-sm mb-5">
+                <div class="d-flex align-items-center mb-4">
+                  <div class="testimonial-img flex-shrink-0"><img class="img-fluid rounded-circle" src="img/h3.jpg" alt=""></div>
+                  <div class="ms-4">
+                    <h5 class="mb-0">Cecilia Chinasa</h5>
+                    <p class="small text-muted mb-1">Event Interior Designer</p>
+                    <ul class="small list-inline text-primary mb-0">
+                      <li class="list-inline-item m-0"><i class="fas fa-star"></i></li>
+                      <li class="list-inline-item m-0 1"><i class="fas fa-star"></i></li>
+                      <li class="list-inline-item m-0 2"><i class="fas fa-star"></i></li>
+                      <li class="list-inline-item m-0 3"><i class="fas fa-star"></i></li>
+                      <li class="list-inline-item m-0 4"><i class="fas fa-star"></i></li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="text-muted text-sm mb-0">Excellent work   </p>
+              </div>
+            </div>
+            <div class="swiper-slide p-3">
+              <div class="testimonial p-5 shadow-sm mb-5">
+                <div class="d-flex align-items-center mb-4">
+                  <div class="testimonial-img flex-shrink-0"><img class="img-fluid rounded-circle" src="img/h30.jpg" alt=""></div>
+                  <div class="ms-4">
+                    <h5 class="mb-0">Agatha Chioma</h5>
+                    <p class="small text-muted mb-1">Businesswoman</p>
+                    <ul class="small list-inline text-primary mb-0">
+                      <li class="list-inline-item m-0"><i class="fas fa-star"></i></li>
+                      <li class="list-inline-item m-0 1"><i class="fas fa-star"></i></li>
+                      <li class="list-inline-item m-0 2"><i class="fas fa-star"></i></li>
+                      <li class="list-inline-item m-0 3"><i class="fas fa-star"></i></li>
+                      <li class="list-inline-item m-0 4"><i class="fas fa-star"></i></li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="text-muted text-sm mb-0">Damn! Babe, your makeup is dope   </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination">                               </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-dark">
+      <!-- <div class="bg-primary py-5 text-white">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-3 col-md-6">
+              <div class="d-flex align-items-center">
+                <h6 class="h1 mb-0">705</h6>
+                <p class="ms-3 flex-grow-1 text-uppercase mb-0">Projects completed </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="d-flex align-items-center">
+                <h6 class="h1 mb-0">809</h6>
+                <p class="ms-3 flex-grow-1 text-uppercase mb-0">Satisfied customers </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="d-flex align-items-center">
+                <h6 class="h1 mb-0">354</h6>
+                <p class="ms-3 flex-grow-1 text-uppercase mb-0">Awards recieved </p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="d-flex align-items-center">
+                <h6 class="h1 mb-0">25</h6>
+                <p class="ms-3 flex-grow-1 text-uppercase mb-0">Years experience </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="bg-dark py-5 text-white mr-50">
+        <div class="container">
+          <div class="row py-5" >
+            <div class="col-lg-4 col-md-6"><img class="mb-4" src="img/niffa 3.png" alt="" width="200">
+              <!-- <p class="text-muted text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p> -->
+              <p class="mb-1"><i class="fas me-3 text-primary fa-fw fa-envelope"></i><span class="text-sm text-muted"><a href="mailto:abuchijenifer5@gmail.com">Abuchijenifer5@gmail.com</a></span></p>
+              <p class="mb-1"><i class="fas me-3 text-primary fa-fw fa-mobile"></i><span class="text-sm text-muted"><a href="tel:09099387775">+234 909 938 7775</a></span></p>
+              <p class="mb-1"><i class="fas me-3 text-primary fa-fw fa-map-marker-alt"></i><span class="text-sm text-muted">Shop 2&3 opposite fred-martins shopping mall, 33 onitsha.</span></p>
+            </div>
+            <div class="col-lg-2 col-md-6">
+              <h5 class="mt-3 mb-4 fw-normal">Quick links</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a class="footer-link" href="index.html">Home</a></li>
+                <li class="mb-2"><a class="footer-link" href="about.html">About Us</a></li>
+                <li class="mb-2"><a class="footer-link" href="services.html">Our Services</a></li>
+                <li class="mb-2"><a class="footer-link" href="samples.html">Our Sample Works</a></li>
+                <li class="mb-2"><a class="footer-link" href="shopio/shop.html">Our Products</a></li>
+                <li class="mb-2"><a class="footer-link" href="contact.html">Contacts Us</a></li>
+                <!-- <li class="mb-2"><a class="footer-link" href="#!">Pages</a></li> -->
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-6">
+              <h5 class="mt-3 mb-4 fw-normal">Our services</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a class="footer-link" href="#!">BRIDAL MAKEUP</a></li>
+                <li class="mb-2"><a class="footer-link" href="#!">BRIDAL HAIR</a></li>
+                <li class="mb-2"><a class="footer-link" href="#!">FIXING OF LASHES</a></li>
+                <li class="mb-2"><a class="footer-link" href="#!">GELE TYPING</a></li>
+                <li class="mb-2"><a class="footer-link" href="#!">PEDICURE MANICURE</a></li>
+                <li class="mb-2"><a class="footer-link" href="#!">NAIL FIXING</a></li>
+              </ul>
+            </div>
+            <!-- <div class="col-lg-4 col-md-6">
+              <h5 class="mt-3 mb-4 fw-normal">Latest news</h5>
+              <ul class="list-unstyled mb-0">
+                <li class="d-flex mb-4">
+                  <div class="flex-shrink-0"><img src="img/blog-thumb-1.jpg" alt="" width="60"></div>
+                  <div class="ms-3">
+                    <p class="small text-muted mb-0">May 01, 2019 </p>
+                    <h6 class="text-light fw-normal mb-0">Successful Growth In Business 2018</h6><a class="reset-anchor text-primary text-sm" href="#!">Read more<i class="fas fa-angle-right ms-2"></i></a>
+                  </div>
+                </li>
+                <li class="d-flex">
+                  <div class="flex-shrink-0"><img src="img/blog-thumb-2.jpg" alt="" width="60"></div>
+                  <div class="ms-3">
+                    <p class="small text-muted mb-0">May 01, 2019 </p>
+                    <h6 class="text-light fw-normal mb-0">Successful Growth In Business 2018</h6><a class="reset-anchor text-primary text-sm" href="#!">Read more<i class="fas fa-angle-right ms-2"></i></a>
+                  </div>
+                </li>
+              </ul>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="bg-darker py-4">
+        <div class="container text-center">
+          <!-- You are completely free to use this template for your personal use or as a work for your client as long as you keep the link at the template footer pointing to our partner and us.-->
+          <!-- If you would prefer removing the backlink from the theme footer, please purchase the attribution-free license at the theme page at https://bootstrapious.com/attribution-free-license.-->
+          <p class="mb-0 text-muted text-sm">&copy; All rights reserved. <a href="https://niffas-beauty-hub.netlify.app">NIFFAS BEAUTY HUB</a>. </p>
+
+          <p class="mb-0 text-muted text-sm"> Designed By <a href="https://breeze-portfolio.netlify.app">BREEZE CONCEPT</a>. </p>
+        </div>
+      </div>
+    </footer>
+    <!-- <button class="btn btn-primary btn-sm d-none d-lg-inline-block" type="button" data-bs-toggle="collapse" data-bs-target="#style-switch" id="style-switch-button"><i class="fa fa-cog fa-2x"></i></button>
+    <div class="collapse" id="style-switch">
+      <h5>Select theme colour</h5>
+      <form class="mb-3">
+        <select class="form-select" name="colour" id="colour">
+          <option value="">select colour variant</option>
+          <option value="css/style.default.css">red</option>
+          <option value="css/style.pink.css">pink</option>
+          <option value="css/style.green.css">green</option>
+          <option value="css/style.violet.css">violet</option>
+          <option value="css/style.sea.css">sea</option>
+          <option value="css/style.blue.css">blue</option>
+        </select>
+      </form>
+      <p><img class="img-fluid" src="img/template-mac.png" alt=""></p>
+      <p class="text-muted text-sm">Stylesheet switching is done via JavaScript and can cause a blink while page loads. This will not happen in your production code.</p>
+    </div> -->
+
+
+    <!-- JavaScript files-->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="vendor/modal-video/js/modal-video.js"></script>
+    <script src="vendor/leaflet/leaflet.js"></script>
+    <script src="js/front.js"></script>
+
+    <style>
+      .bs-example {
+    margin: 20px;
+  }
+  
+  .modal-content iframe {
+    margin: 0 auto;
+    display: block;
+  }
+    </style>
+
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+      </script>
+      <script src=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+      </script>
+      
+      <script>
+        $(document).ready(function() {
+          var url = $("#Geeks3").attr('src');
+          $("#Geeks2").on('hide.bs.modal', function() {
+            $("#Geeks3").attr('src', '');
+          });
+          $("#Geeks2").on('show.bs.modal', function() {
+            $("#Geeks3").attr('src', url);
+          });
+        });
+      </script>
+    <script>
+      // ------------------------------------------------------- //
+      //   Inject SVG Sprite - 
+      //   see more here 
+      //   https://css-tricks.com/ajaxing-svg-sprite/
+      // ------------------------------------------------------ //
+      // function injectSvgSprite(path) {
+      
+      //     var ajax = new XMLHttpRequest();
+      //     ajax.open("GET", path, true);
+      //     ajax.send();
+      //     ajax.onclick = function(e) {
+      //     var div = document.createElement("div");
+      //     div.className = 'd-none';
+      //     div.innerHTML = ajax.responseText;
+      //     document.body.insertBefore(div, document.body.childNodes[0]);
+      //   }
+      // } 
+      // this is set to BootstrapTemple website as you cannot 
+      // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
+      // while using file:// protocol
+      // pls don't forget to change to your domain :)
+      // injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg'); 
+      injectSvgSprite('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+      
+    </script>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  
+<!-- <div class="modal-video" tabindex="-1" role="dialog" aria-label="You just openned the modal video" id="L96D8T595MZZV">
+  <div class="modal-video-body">
+    <div class="modal-video-inner" id="modal-video-inner-L96D8T595MZZV">
+      <div class="modal-video-movie-wrap" style="padding-bottom:56.25%">
+        <button class="modal-video-close-btn js-modal-video-dismiss-btn"
+          aria-label="Close the modal by clicking here">
+        </button>
+        <iframe width="460" height="230" src="img/intro.mp4" frameborder="0" allowfullscreen="true" tabindex="-1"
+          allow="autoplay; accelerometer; encrypted-media; gyroscope; picture-in-picture">
+        </iframe>
+      </div>
+    </div>
+  </div> -->
+  <!-- <link rel="stylesheet" href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+</body>
+
+</html>
+
+
+
+
+
+
+
+    <!-- JavaScript files-->
+    <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="vendor/modal-video/js/modal-video.js"></script>
+    <script src="vendor/leaflet/leaflet.js"></script>
+    <script src="js/front.js"></script>
+    <script> -->
+      <!-- // ------------------------------------------------------- //
+      //   Inject SVG Sprite - 
+      //   see more here 
+      //   https://css-tricks.com/ajaxing-svg-sprite/
+      // ------------------------------------------------------ // -->
+      <!-- function injectSvgSprite(path) {
+      
+          var ajax = new XMLHttpRequest();
+          ajax.open("GET", path, true);
+          ajax.send();
+          ajax.onload = function(e) {
+          var div = document.createElement("div");
+          div.className = 'd-none';
+          div.innerHTML = ajax.responseText;
+          document.body.insertBefore(div, document.body.childNodes[0]);
+          }
+      } -->
+      <!-- // this is set to BootstrapTemple website as you cannot 
+      // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
+      // while using file:// protocol
+      // pls don't forget to change to your domain :) -->
+      <!-- injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg');  -->
+      
+    <!-- </script> -->
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </body>
+</html> -->
