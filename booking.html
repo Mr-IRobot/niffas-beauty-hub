@@ -21,6 +21,15 @@
     <link rel="stylesheet" href="css/custom.css">
     <!-- Favicon-->
     <link rel="shortcut icon" href="img/favicon.png">
+    <script src="./mail2.js" type="text/javascript"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("GFehls7RYeu_DRfAb");
+   })();
+</script>
   </head>
   <body>
     <!-- navbar-->
@@ -33,9 +42,11 @@
             </div> -->
             <div class="col-lg-10 text-end py-2 text-center text-lg-end">
               <ul class="list-inline mb-0">
+                <li class="list-inline-item"><a class="fw-normal text-sm reset-anchor" href="https://wa.me/qr/A2F5ICPQXOTEH1"><ion-icon name="logo-whatsapp" style="color: white;"></ion-icon> &nbsp;+234 703 331 3757</a></li>
+                <li class="list-inline-item">|</li>
                 <li class="list-inline-item"><a class="fw-normal text-sm reset-anchor" href="tel:09099387775"><i class="fas fa-mobile me-2"></i>+234 909 938 7775</a></li>
                 <li class="list-inline-item">|</li>
-                <li class="list-inline-item"><a class="fw-normal text-sm reset-anchor" href="mailto:abuchijennifer5@gmail"><i class="fas fa-envelope me-2"></i>Abuchijennifer5@gmail.com</a></li>
+                <li class="list-inline-item"><a class="fw-normal text-sm reset-anchor" href="mailto:ogbonnahilary@gmail"><i class="fas fa-envelope me-2"></i>ogbonnahilary@gmail.com</a></li>
                 <li class="list-inline-item">|</li>
                 <li class="list-inline-item"><a class="fw-normal text-sm reset-anchor" href="#!"><i class="fas fa-clock me-2"></i>Opening hours: Mon - Sat 9:00 - 18:00</a></li>
                 <!-- <li class="list-inline-item">|</li> -->
@@ -94,29 +105,32 @@
       <div class="container py-5">
         <header>
           <h2>Book a <span class="text-primary">Makeup </span>Service</h2>
-          <p class="mb-5 text-muted">Fill in the form below to book any service of your choice.</p>
+          <p class="mb-5 text-muted">Fill in the form below to book any service of your choice. OR</p>
+          <div class="col-lg-12">
+            <a href="https://wa.me/qr/A2F5ICPQXOTEH1"><button class="btn btn-outline-success">Whatsapp me now</button></a>
+          </div><br/>
         </header>
         <div class="row gy-5">
           <div class="col-lg-7">
             <div class="pt-1 bg-primary">
               <div class="p-4 p-lg-5 bg-white shadow-sm">
-                <form action="#">
+                <form onsubmit="sendMail()" action="success.html">
                   <div class="row gy-3">
                     <div class="col-lg-6">
-                      <input class="form-control" type="text" name="firstname" placeholder="First name">
+                      <input class="form-control" type="text" name="First" placeholder="First name" required>
                     </div>
                     <div class="col-lg-6">
-                      <input class="form-control" type="text" name="lastname" placeholder="Last name">
+                      <input class="form-control" type="text" name="Last" placeholder="Last name" required>
                     </div>
                     <div class="col-lg-6">
-                      <input class="form-control" type="tel" name="phone" placeholder="Phone number">
+                      <input class="form-control" type="tel" name="Phone" placeholder="Phone number" required>
                     </div>
                     <div class="col-lg-6">
-                      <input class="form-control" type="email" name="email" placeholder="Email">
+                      <input class="form-control" type="email" name="Email" placeholder="Email" required>
                     </div>
                     <div class="form-group col-lg-12">
                         <!-- <label class="form-label">Country</label> -->
-                        <select class="form-control js-country" name="country">
+                        <select class="form-control js-country" name="Service" required>
                           <option value="" style="color: rgb(112, 110, 110);">Choose a Service</option>
                           <option value="BRIDAL MAKEUP">BRIDAL MAKEUP</option>
                           <option value="BRIDAL HAIR">BRIDAL HAIR</option>
@@ -133,10 +147,10 @@
                       <input class="form-control" type="email" name="email" placeholder="Email address">
                     </div> -->
                     <div class="col-lg-12">
-                      <textarea class="form-control" name="message" rows="5" placeholder="Tell us more in details"></textarea>
+                      <textarea class="form-control" name="Message" rows="5" placeholder="Tell us more in details" required></textarea>
                     </div>
                     <div class="col-lg-12">
-                      <button class="btn btn-outline-primary" type="submit">Book Service</button>
+                      <button class="btn btn-outline-primary" type="submit" onsubmit="sendMail()">Book Service</button>
                     </div>
                   </div>
                 </form>
@@ -186,8 +200,8 @@
         <div class="row py-5" >
           <div class="col-lg-4 col-md-6"><img class="mb-4" src="img/niffa 3.png" alt="" width="200">
             <!-- <p class="text-muted text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p> -->
-            <p class="mb-1"><i class="fas me-3 text-primary fa-fw fa-envelope"></i><span class="text-sm text-muted">Abuchijenifer5@gmail.com</span></p>
-            <p class="mb-1"><i class="fas me-3 text-primary fa-fw fa-mobile"></i><span class="text-sm text-muted">+535 421 895 6523</span></p>
+            <p class="mb-1"><i class="fas me-3 text-primary fa-fw fa-envelope"></i><span class="text-sm text-muted"><a class="fw-normal text-sm reset-anchor" href="mailto:ogbonnahilary@gmail.com">ogbonnahilary@gmail.com</a></span></p>
+            <p class="mb-1"><i class="fas me-3 text-primary fa-fw fa-mobile"></i><span class="text-sm text-muted"><a class="fw-normal text-sm reset-anchor" href="tel:09099387775">+234 909 938 7775</a></span></p>
             <p class="mb-1"><i class="fas me-3 text-primary fa-fw fa-map-marker-alt"></i><span class="text-sm text-muted">Shop 2&3 opposite fred-martins shopping mall, 33 onitsha.</span></p>
           </div>
           <div class="col-lg-2 col-md-6">
@@ -269,6 +283,10 @@
     <script src="vendor/leaflet/leaflet.js"></script>
     <script src="js/leaflet.js"></script>
     <script src="js/front.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
     <script>
       // ------------------------------------------------------- //
       //   Inject SVG Sprite - 
