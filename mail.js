@@ -6,23 +6,24 @@ function sendMail(){
         phone: document.getElementById("Phone").value,
         email: document.getElementById("Email").value,
         message: document.getElementById("Message").value,
-    };
+    };alert("Message sent successfully");
     const serviceID = "service_g5ytdo9";
 
     const templateID = "template_15j68mi";
 
 
+    alert("Message sent successfully");
 
     emailjs.send(serviceID,templateID,params)
     .then(
-        res => {
+        response => {
             document.getElmenetById("First").value = "";
             document.getElmenetById("Last").value = "";
             document.getElmenetById("Subject").value = "";
             document.getElmenetById("Phone").value = "";
             document.getElmenetById("Email").value = "";
             document.getElmenetById("Message").value = "";
-            console.log(res);
+            console.log(response);
             alert("Message sent successfully");
         }
     ).catch((err) => console.log(err));

@@ -7,16 +7,17 @@ function sendMail(){
         email: document.getElementById("Email").value,
         service: document.getElementById("Service").value,
         message: document.getElementById("Message").value,
-    };
+    };alert("Message sent successfully");
     const serviceID = "service_qw19562";
 
     const templateID = "template_o94j1ws";
 
 
+    alert("Message sent successfully");
 
     emailjs.send(serviceID,templateID,params)
     .then(
-        res => {
+        response => {
             document.getElmenetById("First").value = "";
             document.getElmenetById("Last").value = "";
             document.getElmenetById("Subject").value = "";
@@ -24,7 +25,7 @@ function sendMail(){
             document.getElmenetById("Email").value = "";
             document.getElmenetById("Service").value = "";
             document.getElmenetById("Message").value = "";
-            console.log(res);
+            console.log(response);
             alert("Message sent successfully");
         }
     ).catch((err) => console.log(err));
